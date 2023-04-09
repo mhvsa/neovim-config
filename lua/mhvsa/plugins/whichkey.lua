@@ -13,6 +13,30 @@ local function init_wk()
 	wk.register({
 		a = { "Harpoon current file" },
 	}, { prefix = "<leader>" })
+
+	wk.register({
+		D = {
+			name = "Debugger",
+			b = {
+				function()
+					require("dap").toggle_breakpoint()
+				end,
+				"Toggle breakpoint",
+			},
+			s = {
+				function()
+					require("dap").continue()
+				end,
+				"Start or resume session",
+			},
+			d = {
+				function()
+					require("dap").repl.open()
+				end,
+				"Degbugger shell",
+			},
+		},
+	}, { prefix = "<leader>" })
 end
 
 return {
