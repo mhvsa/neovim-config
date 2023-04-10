@@ -1,6 +1,7 @@
 local function init_wk()
 	local wk = require("which-key")
 
+	-- Project
 	wk.register({
 		p = {
 			name = "Project",
@@ -10,10 +11,12 @@ local function init_wk()
 		},
 	}, { prefix = "<leader>" })
 
+	-- Harpoon
 	wk.register({
 		a = { "Harpoon current file" },
 	}, { prefix = "<leader>" })
 
+	-- Debugging
 	wk.register({
 		D = {
 			name = "Debugger",
@@ -34,6 +37,19 @@ local function init_wk()
 					require("dap").repl.open()
 				end,
 				"Degbugger shell",
+			},
+		},
+	}, { prefix = "<leader>" })
+
+	-- Refactor
+	wk.register({
+		r = {
+			name = "Refactor",
+			r = {
+				function()
+					require("telescope").extensions.refactoring.refactors()
+				end,
+				"Open refactoring options",
 			},
 		},
 	}, { prefix = "<leader>" })
