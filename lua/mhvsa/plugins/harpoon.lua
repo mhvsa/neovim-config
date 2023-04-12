@@ -1,4 +1,4 @@
-function init_harpoon()
+local function init_harpoon()
 	local mark = require("harpoon.mark")
 	local ui = require("harpoon.ui")
 

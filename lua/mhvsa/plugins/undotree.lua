@@ -1,4 +1,4 @@
-function init_undotree()
+local function init_undotree()
 	vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 end
 
