@@ -41,6 +41,22 @@ local function init_wk()
 			},
 		},
 	}, { prefix = "<leader>" })
+	-- Git diff resolution
+
+	wk.register({
+		["<leader>gR"] = {
+			function()
+				vim.cmd([[diffget //2]])
+			end,
+			"Get right side",
+		},
+		["<leader>gL"] = {
+			function()
+				vim.cmd([[diffget //3]])
+			end,
+			"Get left side",
+		},
+	})
 
 	-- Debugging
 	wk.register({
