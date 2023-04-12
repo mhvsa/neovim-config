@@ -1,0 +1,2 @@
+-- create a venv specifically for the neovim and set the executable here
+vim.g.python3_host_prog = ""
