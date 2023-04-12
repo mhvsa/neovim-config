@@ -1,4 +1,4 @@
-function init_fugitive()
+local function init_fugitive()
 	vim.keymap.set("n", "<leader>gg", vim.cmd.Git)
 end
 
