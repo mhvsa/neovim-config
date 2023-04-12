@@ -107,6 +107,12 @@ local function init_wk()
 			w = {
 				name = "Workspace",
 				s = { "Toggle workspace symbols" },
+				d = {
+					function()
+						require("trouble").toggle()
+					end,
+					"Toggle workspace diagnostics",
+				},
 			},
 		},
 	}, { prefix = "<leader>" })
