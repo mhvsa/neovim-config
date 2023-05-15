@@ -117,7 +117,7 @@ local function init_wk()
 			},
 			r = {
 				name = "Rename / References",
-				a = { "Toggle references" },
+				r = { "Toggle references" },
 				n = { "Toggle rename" },
 			},
 			w = {
