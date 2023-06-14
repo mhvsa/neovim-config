@@ -44,15 +44,15 @@ local function init_wk()
 	-- Git diff resolution
 
 	wk.register({
-		["<leader>gR"] = {
+		["<leader>gy"] = {
 			function()
-				vim.cmd([[diffget //2]])
+				vim.cmd([[diffget //3]])
 			end,
 			"Get right side",
 		},
-		["<leader>gL"] = {
+		["<leader>gt"] = {
 			function()
-				vim.cmd([[diffget //3]])
+				vim.cmd([[diffget //2]])
 			end,
 			"Get left side",
 		},

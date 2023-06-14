@@ -7,7 +7,7 @@ local function init_lsp()
 		"rust_analyzer",
 		"gopls",
 		"pyright",
-		"lua_ls",
+        "lua_ls",
 	})
 	lsp.configure("lua_ls", {
 		settings = {

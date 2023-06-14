@@ -1,4 +1,4 @@
-local function init()
+local function init_telescope()
 	require("telescope").load_extension("git_worktree")
 	local wk = require("which-key")
 
@@ -22,6 +22,10 @@ local function init()
 			},
 		},
 	}, { prefix = "<leader>" })
+end
+
+local function init()
+    init_telescope()
 end
 
 return {
